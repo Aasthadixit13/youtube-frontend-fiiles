@@ -1,0 +1,223 @@
+@media (max-width: 767px) {
+  .home-sideNavbar {
+    display: none !important;
+  }
+
+  .homePage,
+  .fullHomePage {
+    margin-left: 0 !important;
+  }
+
+  .home_mainPage,
+  .home_mainPageWithoutLink {
+    grid-template-columns: 1fr !important;
+    padding: 80px 10px 20px;
+    gap: 20px;
+  }
+
+  .navbar-middle {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .navbar_searchBox {
+    width: 95%;
+  }
+
+  .video {
+    flex-direction: column;
+  }
+
+  .videoSuggestions {
+    max-width: 100%;
+    padding: 20px 0;
+  }
+
+  .profile_page,
+  .profile_page_inactive {
+    margin-left: 0 !important;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+  .home_mainPage,
+  .home_mainPageWithoutLink {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+/* Mobile First - Base styles are already somewhat mobile-friendly */
+
+/* Small devices (phones, <768px) */
+@media (max-width: 767px) {
+  .homePage {
+    margin-left: 0 !important;
+    /* Full width, hide sidebar */
+  }
+
+  .fullHomePage {
+    margin-left: 0;
+  }
+
+  .home-sideNavbar {
+    display: none;
+    /* Hide sidebar completely on mobile */
+  }
+
+  /* Video grid: 1-2 columns */
+  .home_mainPage,
+  .home_mainPageWithoutLink {
+    grid-template-columns: 1fr !important;
+    padding: 70px 10px 20px 10px;
+    gap: 20px;
+  }
+
+  /* Filter buttons smaller */
+  .homePage_options {
+    top: 56px;
+    padding: 0 10px;
+  }
+
+  .homePage_option {
+    height: 28px;
+    font-size: 14px;
+    padding: 0 12px;
+  }
+
+  /* Navbar search bar full width */
+  .navbar-middle {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .navbar_searchBox {
+    width: 90%;
+  }
+
+  /* Video page: Stack vertically */
+  .video {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .videoPostSection {
+    max-width: 100%;
+  }
+
+  .videoSuggestions {
+    max-width: 100%;
+    padding: 20px 0;
+  }
+
+  /* Profile page */
+  .profile_page,
+  .profile_page_inactive {
+    margin-left: 0 !important;
+  }
+
+  .profileVideos {
+    flex-direction: column;
+  }
+}
+
+/* Tablets (768px - 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+
+  .home_mainPage,
+  .home_mainPageWithoutLink {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .homePage {
+    margin-left: 200px;
+    /* Slightly smaller sidebar if needed */
+  }
+}
+
+/* Desktop adjustments if needed (already good) */
+@media (min-width: 1200px) {
+  .home_mainPage {
+    grid-template-columns: repeat(4, 384px);
+  }
+}
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;600&display=swap');
+
+/* Mobile First */
+@media (max-width: 767px) {
+  .navbar-middle {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .navbar_searchBox {
+    width: 95%;
+  }
+
+  .home-sideNavbar,
+  .homeSideNavbarHide {
+    display: none !important;
+  }
+
+  .homePage,
+  .fullHomePage {
+    margin-left: 0 !important;
+  }
+
+  .home_mainPage,
+  .home_mainPageWithoutLink {
+    grid-template-columns: 1fr !important;
+    padding: 80px 10px 20px;
+    gap: 20px;
+  }
+
+  .homePage_options {
+    padding: 0 10px;
+  }
+
+  .homePage_option {
+    height: 30px;
+    font-size: 14px;
+    padding: 0 14px;
+  }
+
+  .video {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .videoSuggestions {
+    max-width: 100%;
+    padding: 20px 0;
+  }
+
+  .profile_page,
+  .profile_page_inactive {
+    margin-left: 0 !important;
+    margin-top: 56px;
+  }
+
+  .profileVideos {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* Search results vertical list */
+  .search_results_grid {
+    flex-direction: column;
+    padding: 80px 10px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+  .home_mainPage,
+  .home_mainPageWithoutLink {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1200px) {
+  .home_mainPage {
+    grid-template-columns: repeat(4, 384px);
+  }
+}

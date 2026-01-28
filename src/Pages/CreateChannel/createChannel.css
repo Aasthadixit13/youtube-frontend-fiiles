@@ -1,0 +1,113 @@
+.createChannel {
+  width: 100%;
+  min-height: 100vh;
+  background-color: black;
+  /* normal page, not overlay */
+  position: relative;
+  /* 🔥 NOT fixed */
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Poppins', sans-serif;
+}
+/* Card */
+.createChannel_card {
+  width: 40%;
+  background-color: black;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0.5px 0.5px 12px rgba(255, 255, 255, 0.4);
+  border-radius: 10px;
+}
+
+/* Title */
+.createChannel_title {
+  font-size: 32px;
+  font-weight: 800;
+  margin-bottom: 30px;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Form */
+.createChannel_form {
+  width: 100%;
+}
+
+/* Inputs */
+.createChannelCredentials {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.createChannelCredentials input,
+.createChannelCredentials textarea {
+  width: 50%;
+  height: 38px;
+  background-color: #222;
+  border: 1px solid #333;
+  border-radius: 6px;
+  margin: 0 auto;
+  color: white;
+  font-size: 14px;
+  outline: none;
+  padding: 8px 12px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.createChannelCredentials textarea {
+  height: 90px;
+  resize: none;
+}
+
+.createChannel-btn {
+  width: 55%;
+  height: 45px;
+  margin: 30px auto 0;
+  display: block;
+  /* 🔥 THIS FIXES IT */
+  border: none;
+  border-radius: 6px;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  color: black;
+  background-color: white;
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+}
+.createChannel-btn:hover {
+  background-color: #e5e5e5;
+}
+
+/* Responsive */
+@media (max-width: 1023px) {
+  .createChannel_card {
+    width: 70%;
+  }
+}
+
+@media (max-width: 767px) {
+  .createChannel_card {
+    width: 90%;
+    padding: 35px 20px;
+  }
+
+  .createChannel_title {
+    font-size: 26px;
+  }
+
+  .createChannel-btn {
+    font-size: 16px;
+  }
+  
+
+  .createChannelCredentials input,
+  .createChannelCredentials textarea {
+    width: 90%;
+  }
+}

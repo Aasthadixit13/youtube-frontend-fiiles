@@ -1,0 +1,123 @@
+.app-container {
+  transition: background-color 0.4s ease;
+  font-family: 'Poppins', sans-serif;
+    font-size: larger;
+}
+
+.app-container.dark-theme {
+  background-color: #0f0f0f;
+  /* Only main area dark */
+}
+
+.app-container.dark-theme .navbar,
+.app-container.dark-theme .home-sideNavbar,
+.app-container.dark-theme .video-card,
+.app-container.dark-theme input,
+.app-container.dark-theme textarea,
+.app-container.dark-theme .some-other-element {
+  background-color: #0f0f0f !important;
+  color: white !important;
+}
+
+.app-container.dark-theme .navbar_searchBoxInput {
+  background-color: #121212 !important;
+  color: white !important;
+  border: 1px solid #303030 !important;
+}
+
+.App {
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+    font-size: larger;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* ==================== ADDED RESPONSIVE CODE BELOW (ONLY NEW) ==================== */
+
+/* Tablet & Small Laptop (768px - 1199px) */
+@media (max-width: 1199px) {
+  .App-logo {
+    height: 35vmin;
+  }
+
+  .App-header {
+    font-size: calc(9px + 2vmin);
+    padding: 20px;
+  }
+}
+
+/* Mobile Phones (up to 767px) */
+@media (max-width: 767px) {
+  .App-logo {
+    height: 30vmin;
+  }
+
+  .App-header {
+    font-size: calc(8px + 2vmin);
+    padding: 16px;
+    justify-content: flex-start;
+    padding-top: 80px;
+    /* Extra space for mobile navbar */
+  }
+}
+
+/* Extra Small Phones (up to 480px) */
+@media (max-width: 480px) {
+  .App-logo {
+    height: 25vmin;
+  }
+
+  .App-header {
+    font-size: calc(7px + 2vmin);
+    padding: 12px;
+    padding-top: 70px;
+  }
+}
+
+/* Large Screens (1600px+) */
+@media (min-width: 1600px) {
+  .App-logo {
+    height: 45vmin;
+  }
+
+  .App-header {
+    font-size: calc(12px + 2vmin);
+  }
+}
+
+/* ========================================================================== */

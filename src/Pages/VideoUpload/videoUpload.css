@@ -1,0 +1,195 @@
+.videoUpload {
+  width: 100%;
+  min-height: 100vh;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Poppins', sans-serif;
+}
+/* Card */
+.uploadBox {
+  width: 40%;
+  background-color: black;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0.5px 0.5px 8px white;
+  border-radius: 8px;
+}
+
+/* Title */
+.uploadVideoTitle {
+  display: flex;
+  align-items: center;
+  /* vertical center */
+  gap: 12px;
+  /* space between icon & text */
+  font-size: 32px;
+  font-weight: 800;
+  margin-bottom: 25px;
+}
+
+/* Form container */
+.uploadForm {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Inputs (same as login) */
+.uploadForm input,
+.uploadForm textarea,
+.uploadForm select {
+  width: 50%;
+  height: 38px;
+  background-color: #222;
+  border: 1px solid #333;
+  border-radius: 5px;
+  margin: 0 auto;
+  color: white;
+  font-size: 14px;
+  outline: none;
+  padding: 0 10px;
+  box-sizing: border-box;
+  font-family: 'Poppins',
+    sans-serif;
+  
+}
+
+/* Textarea */
+.uploadForm textarea {
+  height: 80px;
+  padding: 8px 10px;
+  resize: none;
+}
+
+/* File input */
+.uploadForm input[type="file"] {
+  padding: 6px;
+  font-size: 13px;
+}
+
+/* Buttons container */
+.uploadBtns {
+  width: 50%;
+  margin: 25px auto 0;
+  display: flex;
+  gap: 15px;
+  text-align:center;
+  text-decoration: none;
+  
+  
+}
+
+/* Buttons */
+.uploadBtn-form {
+  flex: 1;
+  height: 45px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  color: black;
+  background-color: white;
+  font-family: 'Poppins',
+      sans-serif;
+}
+
+/* Hover */
+.uploadBtn-form:hover {
+  opacity: 0.85;
+}
+
+/* ================= RESPONSIVE ================= */
+
+/* Tablet */
+@media (max-width: 1023px) {
+  .uploadBox {
+    width: 70%;
+  }
+
+  .uploadForm input,
+  .uploadForm textarea,
+  .uploadForm select,
+  .uploadBtns {
+    width: 70%;
+  }
+}
+
+/* Mobile */
+@media (max-width: 767px) {
+  .uploadBox {
+    width: 90%;
+    padding: 35px 20px;
+  }
+
+  .uploadVideoTitle {
+    font-size: 26px;
+  }
+
+  .uploadForm input,
+  .uploadForm textarea,
+  .uploadForm select,
+  .uploadBtns {
+    width: 100%;
+  }
+}
+
+/* Large Screens */
+@media (min-width: 1600px) {
+  .uploadBox {
+    width: 35%;
+  }
+
+  .uploadVideoTitle {
+    font-size: 36px;
+  }
+}
+
+/* Section wrapper */
+.uploadSection {
+  width: 50%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-size: 14px;
+}
+
+/* Label */
+.uploadSection label {
+  color: #ccc;
+  font-size: 13px;
+}
+
+/* File input */
+.uploadSection input[type="file"] {
+  width: 100%;
+  background-color: #222;
+  border: 1px solid #333;
+  border-radius: 5px;
+  color: white;
+  font-size: 13px;
+  padding: 6px;
+  box-sizing: border-box;
+}
+
+/* Success text */
+.uploadSection p {
+  font-size: 12px;
+  color: #3ea6ff;
+}
+
+/* Thumbnail preview */
+.uploadSection img {
+  width: 100%;
+  max-height: 160px;
+  object-fit: cover;
+  border-radius: 6px;
+  margin-top: 5px;
+}

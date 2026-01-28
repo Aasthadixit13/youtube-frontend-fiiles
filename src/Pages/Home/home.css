@@ -1,0 +1,43 @@
+.home {
+  display: flex;
+  width: 100%;
+  padding: 10px 0 0 0;
+  box-sizing: border-box;
+  /* overflow-x:hidden; */
+  font-family: 'Poppins', sans-serif;
+    font-size: larger;
+}
+
+/* ==================== ADDED RESPONSIVE CODE BELOW (ONLY NEW) ==================== */
+
+/* Tablet (768px - 1199px) */
+@media (min-width: 768px) and (max-width: 1199px) {
+  .home {
+    padding: 8px 0 0 0;
+  }
+}
+
+/* Mobile Phones (up to 767px) */
+@media (max-width: 767px) {
+  .home {
+    padding: 6px 0 0 0;
+    flex-direction: column;
+    /* Stack children vertically on small screens if needed */
+  }
+}
+
+/* Extra Small Phones (up to 480px) */
+@media (max-width: 480px) {
+  .home {
+    padding: 4px 0 0 0;
+  }
+}
+
+/* Large Screens (1600px+) */
+@media (min-width: 1600px) {
+  .home {
+    padding: 12px 0 0 0;
+  }
+}
+
+/* ========================================================================== */

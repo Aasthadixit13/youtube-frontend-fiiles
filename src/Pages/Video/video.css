@@ -1,0 +1,153 @@
+/* ================= MAIN LAYOUT ================= */
+
+.video {
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+  padding: 24px;
+  background: black;
+  padding-top: 90px;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Left main video */
+.videoPostSection {
+  flex: 1;
+  max-width: 900px;
+}
+
+/* Right related */
+.videoSuggestions {
+  width: 360px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* ================= VIDEO INFO ================= */
+
+.video-info h2 {
+  font-size: 22px;
+  font-weight: 600;
+  margin: 12px 0;
+}
+
+.video-meta {
+  color: #aaa;
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+.video-info p {
+  font-size: 15px;
+  color: #ddd;
+  line-height: 1.6;
+}
+
+/* ================= LIKE DISLIKE ================= */
+
+.video-actions {
+  display: flex;
+  gap: 20px;
+  margin: 16px 0;
+}
+
+.video-actions button {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: #1f1f1f;
+  border: none;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 999px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.video-actions button:hover {
+  background: #333;
+}
+
+/* ================= COMMENTS ================= */
+
+.comments-section {
+  margin-top: 32px;
+}
+
+.comments-section h3 {
+  font-size: 18px;
+  margin-bottom: 12px;
+}
+
+.comments-section textarea {
+  width: 100%;
+  min-height: 80px;
+  background: #121212;
+  border: 1px solid #333;
+  border-radius: 6px;
+  padding: 10px;
+  color: white;
+  resize: none;
+  font-family: 'Poppins', sans-serif;
+}
+
+.comments-section button {
+  margin-top: 8px;
+  background: #3ea6ff;
+  border: none;
+  padding: 8px 18px;
+  border-radius: 20px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* single comment */
+.comment {
+  margin-top: 16px;
+  padding: 10px;
+  border-radius: 8px;
+  background: #121212;
+}
+
+.comment p {
+  font-size: 14px;
+  margin-bottom: 4px;
+}
+
+.comment small {
+  color: #aaa;
+}
+
+/* ================= RELATED ================= */
+
+.videoSuggestions a {
+  display: flex;
+  gap: 10px;
+  text-decoration: none;
+  color: white;
+}
+
+.videoSuggestions img {
+  width: 168px;
+  height: 94px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.videoSuggestions p {
+  font-size: 14px;
+  line-height: 1.3;
+}
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 900px) {
+  .video {
+    flex-direction: column;
+  }
+
+  .videoSuggestions {
+    width: 100%;
+  }
+}

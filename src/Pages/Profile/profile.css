@@ -1,0 +1,196 @@
+.profile {
+  width: 100%;
+  min-height: 100vh;
+  background-color: black;
+  color: white;
+  display: flex;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* This is the main centering wrapper */
+.profile_container {
+  width: 100%;
+  min-height: 100vh;
+  margin-top: 56px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 30px 20px;
+  box-sizing: border-box;
+}
+
+/* Actual profile card (like uploadBox) */
+.profile_card {
+  width: 70%;
+  max-width: 1200px;
+  background-color: #000;
+  border-radius: 12px;
+  padding-bottom: 40px;
+}
+
+/* ================= BANNER ================= */
+
+.profile_banner_section {
+  width: 100%;
+  height: 220px;
+  overflow: hidden;
+  border-radius: 12px;
+  background: #111;
+}
+
+.profile_banner_img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* ================= HEADER ================= */
+
+.profile_header {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  margin-top: -70px;
+  padding-left: 40px;
+}
+
+.profile_avatar_large {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  border: 4px solid black;
+  object-fit: cover;
+  background: black;
+}
+
+.profile_info {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.profile_info h1 {
+  font-size: 32px;
+  font-weight: 600;
+}
+
+.subscribers_count {
+  font-size: 14px;
+  color: #aaa;
+}
+
+.profile_description {
+  font-size: 14px;
+  color: #ccc;
+  max-width: 600px;
+}
+
+/* ================= VIDEOS ================= */
+
+.profile_videos {
+  margin-top: 40px;
+  padding: 0 40px;
+}
+
+.profile_videos h2 {
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 16px;
+  border-bottom: 1px solid #333;
+  padding-bottom: 10px;
+}
+
+.profileVideos {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.profileVideo_block {
+  color: white;
+  text-decoration: none;
+}
+
+.profileVideo_block_thumbnail {
+  width: 100%;
+  height: 140px;
+  border-radius: 10px;
+  overflow: hidden;
+  background: #111;
+}
+
+.profileVideo_block_thumbnail_img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.profileVideo_block_detail {
+  margin-top: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.profileVideo_block_detail_name {
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.profileVideo_block_detail_about {
+  font-size: 13px;
+  color: #aaa;
+}
+
+/* ================= RESPONSIVE ================= */
+
+/* Tablet */
+@media (max-width: 1023px) {
+  .profile_card {
+    width: 90%;
+  }
+
+  .profile_avatar_large {
+    width: 120px;
+    height: 120px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 767px) {
+  .profile_card {
+    width: 100%;
+  }
+
+  .profile_banner_section {
+    height: 160px;
+  }
+
+  .profile_header {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: -60px;
+    padding-left: 0;
+  }
+
+  .profile_avatar_large {
+    width: 100px;
+    height: 100px;
+  }
+
+  .profile_videos {
+    padding: 0 20px;
+  }
+
+  .profileVideos {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Small Mobile */
+@media (max-width: 480px) {
+  .profileVideos {
+    grid-template-columns: 1fr;
+  }
+}
